@@ -5,7 +5,7 @@
     <v-btn icon class="btn_catagory"
       ><v-icon class="white--text">{{ catagoryItem.icon }}</v-icon></v-btn
     >
-    <div class="lt-sp-1 normal_size_font">{{ catagoryItem.title }}</div>
+    <div class="lt-sp-1 normal_size_font mt-1">{{ catagoryItem.title }}</div>
   </div>
 </template>
 
@@ -22,8 +22,8 @@ export default {
   border-radius: 50%;
   background-color: #fa880c;
   color: white;
-  width: 50px!important;
-  height: 50px!important;
+  width: 50px !important;
+  height: 50px !important;
 }
 .catagory_panel {
   background: white;

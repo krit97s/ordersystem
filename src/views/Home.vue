@@ -2,7 +2,7 @@
   <div class="home">
     <v-row no-gutters class="product_panel">
       <v-col cols="12">
-        <Swipper/>
+        <Swipper />
       </v-col>
     </v-row>
     <v-row no-gutters justify="center" class="pa-3 catagory_panel">
@@ -21,7 +21,7 @@
         v-for="(item, index) in catagoryItem"
         :key="index"
       >
-        <ProductItem :catagoryItem="item" />
+        <ProductItem :eachproductItem="item" />
       </v-col>
     </v-row>
   </div>
@@ -36,34 +36,34 @@ export default {
   components: {
     CatagoryItem,
     ProductItem,
-    Swipper
+    Swipper,
   },
   data() {
     return {
       catagoryItem: [
         {
           icon: "mdi-food-drumstick",
-          title: "Meat",
+          title: "เนื้อสัตว์",
         },
         {
           icon: "mdi-beer",
-          title: "Drink",
+          title: "เครื่องดื่ม",
         },
         {
           icon: "mdi-fruit-cherries",
-          title: "Vegetable",
+          title: "ผัก",
         },
         {
           icon: "mdi-shaker",
-          title: "Sushi",
+          title: "ซูชิ",
         },
         {
           icon: "mdi-ice-cream",
-          title: "Desert",
+          title: "ของหวาน",
         },
         {
           icon: "mdi-food-turkey",
-          title: "Fast food",
+          title: "อาหารทอด",
         },
       ],
     };
